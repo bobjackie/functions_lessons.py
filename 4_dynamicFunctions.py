@@ -4,6 +4,14 @@
 # Don't call the function, you just need to define it.
 
 
+def all_positives(): 
+    for num in list: 
+        if num <0: 
+            return True 
+        else:
+            return False 
+        
+print(all_positives())
 
 
 
