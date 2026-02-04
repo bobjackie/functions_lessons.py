@@ -2,15 +2,14 @@
 # Indefinite Arguments (**kwargs) Practice #1
 # Create a function called number_attributes that counts the number of parameters that are passed, and returns that number as the result.
 
-def number_attributes(**kwargs):
+def atrributions(**kwargs):
 
     return len(kwargs)
 
 # Testing the function
-print(number_attributes(a=1, b=2, c=3))  
-print(number_attributes(name="Alice", age=25)) 
-print(number_attributes()) 
-
+print(atrributions(a=5, b=7, c=9))  
+print(atrributions(name="pip", age=25)) 
+print(atrributions()) 
 
 
 
@@ -21,13 +20,13 @@ print(number_attributes())
 # Indefinite Arguments (**kwargs) Practice #2
 # Create a function called list_attributes that returns in the form of a list the values of the attributes given in the form of keywords. The function must expect to receive any number of arguments of this type.
 
-def describe_person(name, **kwargs):
+def charaterics(name, **kwargs):
     print(f"Characteristics of {name}:")
    
     for key, value in kwargs.items():
         print(f"{key}: {value}")
 
-describe_person("Ash", eye_color="brown", hair_color="black")
+charaterics("Nicole", eye_color="pink", hair_color="pink")
 
 
 
@@ -57,11 +56,11 @@ describe_person("Ash", eye_color="brown", hair_color="black")
 # hair_color: black
 
 
-def describe_person(name, **kwargs):
+def charaterics(name, **kwargs):
     print(f"Characteristics of {name}:")
    
     for key, value in kwargs.items():
         print(f"{key}: {value}")
 
 
-describe_person("Ash", eye_color="brown", hair_color="black")
+charaterics("Bob", eye_color="turquiose", hair_color="untoned yellow")
